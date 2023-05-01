@@ -1,0 +1,225 @@
+/* Default styles */
+*{
+  margin: 0;
+  padding: 0;
+}
+Body{
+  background-color: rgb(193, 183, 183);
+  /* display: flex; */
+  
+}
+.body{
+    height: 100%;
+    padding: 60px;
+    /* display: flex; */
+    /* margin-bottom: 0; */
+}
+header h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.notes{
+  display: flex;
+  flex-wrap: wrap;
+}
+.write{
+
+  padding: 35px;
+  border-radius: 30px;
+  position: fixed;
+  top: 10%;
+  left: 13%;
+  box-shadow: 5px 10px;
+  right: 13%;
+  width: 70%;
+  height: 70%;
+  background-color: aquamarine;
+  overflow: auto;
+}
+
+.wtitle textarea{
+  font-weight: bold;
+  font-size: 30px;
+  background: none;
+  resize: none;
+  border: none;
+
+}
+hr{
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.write button{
+  position: absolute;
+  right: 40px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+.wcontent textarea{
+  font-size: 20px;
+  background: none;
+  border: none;
+  resize: none;
+
+}
+textarea:focus {
+  outline: none;
+}
+
+.note{
+  padding: 15px;
+  border-radius: 30px;
+  margin: 1%;
+  width: 21%;
+  height: 160px;
+  /* display: inline; */
+  background-color: antiquewhite;
+  /* border: 1px solid black; */
+  box-shadow: 5px 10px;
+
+}
+.ntitle{
+  /* background-color: aquamarine; */
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.nbody{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* background-color: #fff; */
+  height: 230px;
+}
+
+header{
+  background-color: rgb(145, 98, 98);
+  /* height: 50px; */
+  padding: 30px;
+
+}
+
+.main{
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+.mlogin p{
+  margin-top: 15px;
+}
+.mleft{
+    height: 600px;
+    width: 50%;
+    background-color: white;
+}
+
+.mlogin{
+    padding: 49px;
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.mlogin h1{
+    font-size: 24px;
+    color: grey;
+    font-family: sans-serif;
+}
+p{
+  color: black;
+}
+.mlogin button{
+
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: burlywood;
+    font-size: 20px;
+    padding: 7px 28px;
+    border-radius: 20px;
+}
+
+.mlogin input{
+    margin-top: 15px;
+    width: 320px;
+    height: 23px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+.mlogin p{
+    cursor: pointer;
+}
+
+.mright{
+    width: 50%;
+    height: 600px;
+    background-image: url(./images/12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nmake{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  box-shadow: 3px 5px;
+  background-color: rgb(231, 216, 193);
+  border-radius: 300px;
+}
+
+/* Media queries for smaller screens */
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  .notes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .note {
+    width: 100%;
+    height: auto;
+  }
+
+  .ntitle {
+    font-size: 24px;
+  }
+
+  .nbody {
+    font-size: 16px;
+  }
+  
+  .main {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .mleft,
+  .mright {
+    width: 100%;
+    height: auto;
+  }
+  
+  .mlogin {
+    padding-top: 50px;
+  }
+  
+  .mlogin input {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .mlogin button {
+    margin: 10px 0;
+  }
+}
+
